@@ -10,9 +10,9 @@ Gwion can be configured to better suit the user's needs. This is mainly done in 
 ## `util/config.mk`
 
 - `USE_DOUBLE   ?= 0`
-  - ??
+  - Sets the size of float to double
 - `USE_GETTEXT  ?= 0`
-  - ??
+  - Enable internationalization (almost complete)
 - `USE_DEBUG    ?= 1`
   - Enables debug features
 - `USE_LTO      ?= 0`

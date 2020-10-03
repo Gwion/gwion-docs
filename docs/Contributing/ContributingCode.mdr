@@ -6,6 +6,7 @@ You might be here because you found something you could improve in [Gwion](https
 Please open an [issue](https://github.com/fennecdjay/gwion/issues) describing the problem and how you might address it.
 
 ## Dependencies
+- C compiler supporting C99 (ex- `gcc`, `clang`)
 - GNU Make
 
 ### Fork the repository

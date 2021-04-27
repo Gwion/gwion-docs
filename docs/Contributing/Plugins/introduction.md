@@ -1,4 +1,4 @@
-# Introduction
+# Introduction to Plugins
 
 Plugins are an important aspect of Gwion's flexibility and extensibility. They allow you to customize behavior as well as develop novel functionality within Gwion itself.
 
@@ -49,6 +49,7 @@ Our first step is to create the `Adder` class. This is done with:
 ```c
 GWION_IMPORT(Adder) {
     // Begin our adder class
+    // `gwi` stands for GWion Importer
     DECL_OB(const Type, t_adder, = gwi_class_ini(gwi, "Adder", "Object"));
 }
 ```
@@ -141,7 +142,7 @@ static SFUN(sfun) {
 ```
 
 Finally, we can test our plugin. After running `make` (which creates `Adder.so`) in the directory, create a new file called `add.gw` and insert the following code:
-```gwion
+```haskell
 #! We import our newly created plugin
 #require Adder
 
